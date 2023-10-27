@@ -1,3 +1,4 @@
+/* Resets */
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +7,8 @@
 
 :root {
     font-size: 62.5%;
+
+    --bg-body: #040924;
     --tt-heading: #0c3440;
     --tt-label: #00453a;
     --tt-input: #212529;
@@ -20,8 +23,11 @@
     --bg-input: dce2e9;
 }
 
+/* Page style */
+
 body {
-    background-color: #040924;
+    background-color: var(--bg-body);
+
     font-size: 1.6rem;
     font-family: 'Roboto', sans-serif;
 }
@@ -33,18 +39,18 @@ body {
 }
 
 .card {
+    background-color: var(--tt-button);
     max-width: 42.8rem ;
     padding: 4.8rem 6.4rem 6.4rem;
-    background-color: #fff;
     margin-inline: auto;
     box-shadow: 0 .2rem .4rem rgba(0,0,0,0.1);
     border-radius: 0.6rem;
 }
 
 .title {
+    color: var(--tt-heading);
     font-size: 3.2rem;
     line-height: 4rem;
-    color: var(--tt-heading)
 }
 
 form {
@@ -56,9 +62,10 @@ form h1 {
 }
 
 form label {
+    color: var(--tt-label);
     font-size: 1.4rem;
     line-height: 1.8rem;
-    color: var(--tt-label);
+    
     display: block;
     margin-bottom: .8rem;
 }
@@ -87,20 +94,25 @@ body, input, button {
     font-size: 1.6rem;
 }
 
+/* form */
+
 form button {
+    background-color: var(--bg-button);
     margin-top: 3.2rem;
     padding: 1.6rem;
     width: 100%;
     border: none;
-    background-color: var(--bg-button);
+    border-radius: .4rem;
+
     color: var(--tt-button);
+    font-weight: bold;
+    line-height: 2rem;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .8rem;
-    font-weight: bold;
-    border-radius: .4rem;
-    line-height: 2rem;
+
     cursor: pointer;
     transition: background .3s;
 }
@@ -110,7 +122,7 @@ form button:hover {
 }
 
 
-
+/* Modals */
 .modal-wrapper {
     position: absolute;
     inset: 0;
@@ -134,9 +146,11 @@ form button:hover {
 .modal button {
     background-color: none;
     border: none;
+
     position: absolute;
     top: 1.6rem;
     right: 1.6rem;
+
     cursor: pointer;
     transition: transform .3s;
 }
@@ -145,22 +159,27 @@ form button:hover {
     transform: scale(1.1);
 }
 
-.alertErro {
+/* Error */
+
+.alertError {
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
 }
 
 .alertError {
-    position: absolute;
+    visibility: hidden;
     background-color: var(--bg-error);
+    padding: .8rem 0;
+    
+    color: var(--tt-error);
+    font-weight: bold;
+
+    position: absolute;
     top: 0;
     right: 0;
     left: 0;
-    padding: .8rem 0;
-    color: var(--tt-error);
-    font-weight: bold;
-    visibility: hidden;
+    
     opacity: 0;
     transform: translateY(-30px);
     transition: transform .7s;
