@@ -1,10 +1,10 @@
 // Isso é chamado de object literal
 export const Modal = {
-    wrapper: document.querySelector(".modal-wrapper"),
+    wrapper: document.querySelector(".modalWrapper"),
     message: document.querySelector(".modal .title span"),
     buttonClose: document.querySelector(".modal button.close"),
 
-    open: function() {
+    open() {
         Modal.wrapper.classList.add("open")
     },
     close() {
