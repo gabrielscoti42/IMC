@@ -1,10 +1,7 @@
 # Calculadora IMC
 Calculadora de Índice de Massa Corporal feito como exercício para o curso Explorer da Rocketseat.
 
-<p>
-    <img alt="" align="left" width="400" height="400" src="https://github.com/gabrielscoti42/IMC/assets/91392840/a81809a7-f8f6-429c-bd68-a11543d63b7e">
-    <img alt="" align="right" width="400" height="400" src="https://github.com/gabrielscoti42/IMC/assets/91392840/1423d35c-1607-4eac-ab3b-3798aacb451f">
-</p>
+![127 0 0 1_5500_Explorer_Stage05_IMC_index html (2)](https://github.com/gabrielscoti42/IMC/assets/91392840/e34a9dc4-d1e5-45af-905b-fb75ce54b41d)
 
 ### Conteúdo Aprendido
 - ES6 Modules
